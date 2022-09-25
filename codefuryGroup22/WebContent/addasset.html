@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Asset</title>
+<style type="text/css">
+	body {
+    font-family: 'Lato', sans-serif;
+	}
+	
+	h1 {
+	    margin-bottom: 40px;
+	}
+	
+	label {
+	    color: #333;
+	}
+	
+	.btn-send {
+	    font-weight: 300;
+	    text-transform: uppercase;
+	    letter-spacing: 0.2em;
+	    width: 80%;
+	    margin-left: 3px;
+	    }
+	.help-block.with-errors {
+	    color: #ff5050;
+	    margin-top: 5px;
+	
+	}
+	
+	.card{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="container">
+        <div class=" text-center mt-5 ">
+            <h1> Add Asset </h1>
+        </div>
+
+    <div class="row ">
+      <div class="col-lg-7 mx-auto">
+        <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+       
+            <div class = "container">
+            <form name="addnewasset" action="HelloServlet" method="post" onsubmit="return true">
+	            <div class="controls">
+					<div>
+						Name: <input type="text" name="name_inp">
+					</div>
+					<br>
+					<div>
+						Type: <input type="text" name="type_inp">
+					</div>
+					<br>
+					<div>
+						Description: <input type="text" name="desc_inp">
+					</div>
+					<br>
+					<div>
+						<input type="submit" value="Submit" class="btn btn-success btn-send  pt-2 btn-block">
+						<input type="reset" value="reset" class="btn btn-success btn-send  pt-2 btn-block">
+					</div>
+	        	</div>
+           </form>
+        </div>
+            </div>
+
+
+    </div>
+    </div>
+    
+
+</div>
+</div>
+
+</body>
+</html>
